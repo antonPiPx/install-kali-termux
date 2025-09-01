@@ -11,12 +11,14 @@
 #    Project : T-Megapackage    #
 #       author : Ashish         #
 #################################
-clear
 
-#updating terminal
+# updating terminal
+
 echo 
 echo -e "\e[32m[\e[34m*\e[32m]\e[36m Installing Termux-Megapackage \e[m "
 echo
+
+```
 apt-get update -yq --silent
 apt-get upgrade -y
 apt-get install python -y
@@ -24,10 +26,10 @@ apt-get install ruby -y
 pip install install lolcat
 gem install lolcat 
 pkg install ncurses-utils -y
+```
 
 cp -R m-pkg /data/data/com.termux/files/usr/bin
 echo
-
 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 read answer
    if [ "$answer" != "${answer#[Yy]}" ] ;then
@@ -44,7 +46,7 @@ rm -rf Termux-Megapackage
 echo
 cd $HOME
 exec bash
-
+```
 
 
 ## NEW:
